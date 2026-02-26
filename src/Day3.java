@@ -32,6 +32,8 @@ public class Day3 {
         System.out.println(sum);
         System.out.println(max);
 
+        System.out.println(max+2);
+        System.out.println(sum+6);
 
     }
 
