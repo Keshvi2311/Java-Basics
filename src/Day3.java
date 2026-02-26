@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 public class Day3 {
     public static void main(String[] args) {
         int x = 10;
@@ -9,9 +12,24 @@ public class Day3 {
         System.out.println("result = " + result);
 
         int[] a = {4,9,10,999,56,23,6};
+        int[] b = new int[a.length];
         int sum = 0;
         int max = a[0];
         int count = 0;
+
+        for(int i = 0;i<a.length;i++){
+            b[i] = a[i];
+        }
+
+        int[] o = {10, 20, 30};
+        int[] m = o.clone();
+
+
+
+        int[] l = {10, 20, 30};
+        int[] n = Arrays.copyOf(l, l.length);
+
+        System.out.println(m);
 
         for (int i = 1 ; i<a.length ; i++){
             System.out.println(a[i]);
